@@ -1,0 +1,67 @@
+@font-face {
+  font-family: ropasans;
+  src: url("RopaSans-Regular.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("Roboto-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mock-cards.svg"), linear-gradient(to bottom right, #00d1ff, #bd00ff);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#container h1 {
+  text-align: center;
+  font-family: ropasans;
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  color: white;
+  text-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+#container p {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 3.4px 2.7px rgba(0, 0, 0, 0.012), 0 8.7px 6.9px rgba(0, 0, 0, 0.018), 0 17.7px 14.2px rgba(0, 0, 0, 0.022), 0 36.5px 29.2px rgba(0, 0, 0, 0.028), 0 100px 80px rgba(0, 0, 0, 0.04);
+}
+#container footer {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-family: roboto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 2rem;
+}
+@media screen and (min-width: 500px) {
+  #container h1 {
+    font-size: 5rem;
+  }
+  #container p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  #container h1 {
+    font-size: 9rem;
+  }
+  #container p {
+    font-size: 2.5rem;
+  }
+}
