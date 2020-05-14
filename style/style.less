@@ -60,6 +60,25 @@
 
   }
 
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    margin-top: 1rem;
+
+    li {
+      a {
+        img {
+          width: 2rem;
+          padding: 0.75rem;
+          color: white;
+        }
+      }
+    }
+  }
+
   footer {
     text-align: center;
     display: block;
@@ -79,6 +98,10 @@
     p {
       font-size: 1.5rem;
     }
+
+    ul {
+      margin-top: 1.5rem;
+    }
   }
 
   @media screen and (min-width: 900px) {
@@ -88,6 +111,14 @@
 
     p {
       font-size: 2.5rem;
+    }
+
+    ul {
+      margin-top: 2.1rem;
+
+      li a img {
+        width: 3rem;
+      }
     }
   }
 }
